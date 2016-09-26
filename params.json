@@ -1,0 +1,6 @@
+{
+  "name": "Homewatcher",
+  "tagline": "Android application (and status widget) which can send and receive commands to/from a DSC PowerSeries security panel via Envisalink's TPI interface for the 2DS product.  Can be used on its own, and in conjunction with RootVPN - an android application can automatically start a PPTP VPN connection for homewatcher to use when connecting.",
+  "body": "Android application (and status widget) which can send and receive commands to/from a DSC PowerSeries security panel via Envisalink's TPI interface for the 2DS product.  Can be used on its own, and in conjunction with RootVPN - an android application can automatically start a PPTP VPN connection for homewatcher to use when connecting.\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
