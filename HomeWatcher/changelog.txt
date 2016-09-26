@@ -1,0 +1,46 @@
+HomeWatcher Change Log:
+
+*2012-05-31:
+1. Basic refactoring to use service instead of directing all calls 
+through Activity complete and working. Needs much more cleanup and
+tuning.
+
+*2012-05-31:
+1. Refactoring underway - non-working version
+
+*2012-05-25:
+1. Made sure that vpnConnected status is saved in HomeWatcherActivity
+
+*2012-05-25:
+1. Added hooks into new app RootVPN to automatically start
+a VPN connection if set in the preferences. Must install and
+setup RootVPN before using this new feature. Root access is
+required to automatically start a VPN connection.
+2. HomeWatcher will now send and receive appropriate Intents
+for RootVPN to manage connection.
+
+*2012-05-10:
+1. Fixed null pointer app crash when reloading and gridview == null
+
+*2012-04-11:
+1. Minor cleanup of code and 505 log message
+2. Updated TPIMessage codes based on 1-03 update
+
+*2012-04-06:
+1. Fixed code to align with changes to TPI API for 505 login events.
+
+*2012-03-20:
+1. When logged in, hitting the back button and exiting the app 
+now explicitly signs off the user from the panel. This prevents 
+the user from returning to the app later, unable to log on
+because the socket is still open. If the user leaves the app 
+running, the connection will remain active, only when the 
+back button is hit is logout automatic.
+2. Yellow sign-on icon appears as user is logging in, but before 
+the system has confirmed the login. 
+3. Indeterminate progress bar appears when user is logging in.
+4. Indeterminate progress bar appears near the panel LEDs on 
+the Status tab when the LED information is being loaded after 
+signing on.
+5. Checksums on messages received back from the server are 
+now verified.
